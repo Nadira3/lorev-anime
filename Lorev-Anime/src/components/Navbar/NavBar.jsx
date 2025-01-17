@@ -5,14 +5,14 @@ import { useState, useEffect } from "react";
 
 const NavBar = () => {
   const [darkNav, setDarkNav] = useState(false);
+  const [menuInvisible, setMenuVisible] = useState(false);
   const toggleMenu = () => {
     menuInvisible === false ? setMenuVisible(true) : setMenuVisible(false);
   };
-  
-  const [menuInvisible, setMenuVisible] = useState(false);
+
   useEffect(() => {
     const handleScroll = () => {
-      window.scrollY > 700 ? setDarkNav(true) : setDarkNav(false);
+      window.scrollY > 50 ? setDarkNav(true) : setDarkNav(false);
     };
 
     window.addEventListener("scroll", handleScroll);
