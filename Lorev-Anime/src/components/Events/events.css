@@ -1,32 +1,20 @@
 .events {
-  width: 90%;
+  width: 95%;
   margin: 0 auto 50px;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  color: #97720d;
-  opacity: 0;
-  transform: translateX(250px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-.in-view {
-  opacity: 1;
-  transform: translateX(0);
+  color: #c65e1d;
 }
 .events h3{
   margin: 5px auto 0;
   text-align: center;
   font-size: 50px;
 }
-.works {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 50px auto 50px;
-}
-.btn img {
-  width: 20px;
-  margin-left: 10px;
+@media (max-width: 882px) {
+  .works{
+    flex-direction: column;
+    gap: 10px;
+  }
 }

@@ -1,49 +1,21 @@
 .products {
-  margin: 50px auto;
-  padding: 0 30px;
-  width: 75%;
-  color: #97720d;
-  position: relative;
-  opacity: 0;
-  transform: translateX(-250px);
-  transition: opacity 0.8s ease, transform 0.8s ease;
-}
-.in-view {
-  opacity: 1;
-  transform: translateX(0);
+  width: 95%;
+  margin: 50px auto 50px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #c65e1d;
 }
 .products h3{
-  margin: 5px auto 20px;
+  margin: 5px auto 0;
   text-align: center;
   font-size: 50px;
 }
-.slider ul {
-  display: flex;
+.works {
   width: 100%;
+  display: flex;
   justify-content: space-between;
   align-items: center;
-}
-.slider ul li {
-  list-style: none;
-  width: 33%;
-  padding: 20px;
-  overflow-y: hidden;
-}
-.product img{
-  margin-bottom: 5px;
-}
-.product {
-  border-radius: 10px;
-  display: flex;
-  flex-direction: column;
-  cursor: pointer;
-  transition: transform 0.2s ease-out;
-  background: #97720d;
-  color: #fff;
-}
-.product span{
-  padding: 5px 10px 10px;
-}
-.product:hover {
-  transform: scale(1.1);
+  margin: 40px auto 0;
 }

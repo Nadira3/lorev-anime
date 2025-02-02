@@ -1,26 +1,26 @@
+import Contact from "./components/Contact/Contact.jsx";
+import Documentary from "./components/Documentary/Documentary.jsx";
+import Events from "./components/Events/Events";
+import Footer from "./components/Footer/Footer.jsx";
 import Hero from "./components/Hero/Hero";
+import Motivational from "./components/Motivational/Motivational";
 import NavBar from "./components/Navbar/NavBar";
 import Products from "./components/Products/Products";
-import Events from "./components/Events/Events";
-import Motivational from "./components/Motivational/Motivational";
 import "./index.css";
-import Contact from "./components/Contact/Contact.jsx";
-import Footer from "./components/Footer/Footer.jsx";
 
-const App = () => {
-  return (
-    <div>
-      <NavBar />
-      <Hero />
+const App = () => (
+  <div>
+    <NavBar />
+    <Hero />
+    <div className="container">
       <Products />
-      <div className="container">
-        <Events />
-	<Motivational />
-        <Contact />
-        <Footer />
-      </div>
+      <Events />
+      <Documentary />
+      <Motivational />
+      <Contact />
+      <Footer />
     </div>
-  );
-};
+  </div>
+);
 
 export default App;

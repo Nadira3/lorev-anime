@@ -1,7 +1,7 @@
-import React, { useRef } from "react";
+import { useRef } from "react";
 import "./hovervideo.css";
 
-function HoverVideo({ src }) {
+function HoverVideo({ src, description }) {
   const videoRef = useRef(null);
   const overlayRef = useRef(null);
 
@@ -16,8 +16,10 @@ function HoverVideo({ src }) {
     if (videoRef.current) {
       videoRef.current.muted = true;
       videoRef.current.pause();
+      videoRef.current.currentTime = 0;
     }
   };
+
   const handleClick = (e) => {
     if (e.target === overlayRef.current) {
       overlayRef.current.classList.add("hide");
@@ -29,15 +31,13 @@ function HoverVideo({ src }) {
       <video
         ref={videoRef}
         src={src}
-        width="100%"
-        muted
-        loop
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       />
       <div className="overlay" onClick={handleClick} ref={overlayRef}>
         Tap to play
       </div>
+      <div className="description">{description}</div>
     </div>
   );
 }

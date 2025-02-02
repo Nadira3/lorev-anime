@@ -1,10 +1,21 @@
 .footer{
   width: 100%;
-  margin: 80px auto 10px;
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
+}
+.footer-content {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin: 10px;
 }
 .footer ul{
   display: flex;
-  gap: 20px;
+  gap: 50px;
+}
+.footer hr {
+  border: none;
+  height: 1px;
+  background: #c65e1d;
 }

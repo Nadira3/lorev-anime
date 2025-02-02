@@ -33,8 +33,8 @@ nav ul li {
 }
 .dark-nav {
   top: 0;
-  background: rgb(128, 83, 0);
-  transition: 0.5s ease-in-out;
+  background: #c65e1d;
+  transition: 0.1s ease-in-out;
 }
 
 /* media query */
@@ -49,7 +49,7 @@ nav ul li {
 }
 @media (max-width: 882px) {
   nav ul {
-    background: #665f5f;
+    background: #c65e1d;
     position: fixed;
     top: 80px;
     right: 0;

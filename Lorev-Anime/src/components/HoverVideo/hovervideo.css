@@ -3,26 +3,27 @@
   overflow: hidden;
   transition: transform 0.3s ease;
   position: relative;
+  background: #c65e1d;
+  border-radius: 10px;
 }
-
 video {
+  width: 100%;
   object-fit: contain;
   cursor: pointer;
   transition: transform 0.3s ease;
   transform: scale(1);
 }
-
 video:hover {
   transform: scale(1.1);
 }
-.overlay{
+.overlay {
   position: absolute;
   z-index: 2;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
-  background: rgba(0, 0, 0, 0.4);
+  background: rgba(0, 0, 0, 0.6);
   color: #fff;
   font-size: 14px;
   display: flex;
@@ -30,6 +31,16 @@ video:hover {
   align-items: center;
   cursor: pointer;
 }
-.hide{
+.hide {
   display: none;
+}
+.description {
+  margin: 12px 0 12px 20px;
+  font-size: 16px;
+  color: #fff;
+}
+@media (max-width: 882px) {
+  .hover-video{
+    width: 100%;
+  }
 }

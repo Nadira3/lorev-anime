@@ -17,7 +17,6 @@
 .contact-left ul li {
   margin: 5px auto;
 }
-
 .contact form input,
 .contact form textarea {
   display: block;
@@ -41,5 +40,5 @@
   margin: 5px auto;
   text-align: center;
   font-size: 30px;
-  color: #97720d;
+  color: #c65e1d;
 }

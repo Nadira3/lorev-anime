@@ -1,7 +1,7 @@
 .hero {
   width: 100vw;
   min-height: 100vh;
-  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(189, 107, 13, 0.5));
+  background: linear-gradient(rgba(0, 0, 0, 0.9), rgba(198,94,29, 0.9));
   background-size: cover;
   background-position: center;
   color: #fff;
@@ -14,7 +14,7 @@
 }
 .hero-text h1{
   display: inline-block;
-  background: rgb(128, 83, 0);
+  background: #c65e1d;
   padding: 2px 10px;
   font-size: 90px;
   margin: 5px 0;
