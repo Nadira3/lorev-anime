@@ -28,6 +28,9 @@ nav ul li {
   list-style: none;
   margin: 0 3.5rem;
 }
+nav ul li:hover {
+  color: #834928;
+}
 .menu-icon {
   display: none;
 }
